@@ -1,0 +1,40 @@
+{
+    "results": {
+        "locations": [
+            {
+                "cityName": "Москва",
+                "fullName": "Москва, Россия",
+                "countryCode": "RU",
+                "countryName": "Россия",
+                "iata": [
+                    "BKA",
+                    "DME",
+                    "SVO",
+                    "VKO",
+                    "MOW"
+                ],
+                "id": "12153",
+                "hotelsCount": "930",
+                "location": {
+                    "lat": "55.752222200",
+                    "lon": "37.615555600"
+                },
+                "_score": 3.2695
+            }
+        ],
+        "hotels": [
+            {
+                "label": "Отель Novotel Moscow City",
+                "locationName": "Москва, Россия",
+                "locationId": "12153",
+                "id": "1074388",
+                "fullName": "Отель Novotel Moscow City, Москва, Россия",
+                "location": {
+                    "lat": "55.747160",
+                    "lon": "37.539302"
+                }
+            }
+        ]
+    },
+    "status": "ok"
+}

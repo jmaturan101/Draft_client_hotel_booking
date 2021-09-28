@@ -3,6 +3,7 @@ import { User } from '../model/model';
 import { AuthService } from '../services/AuthService';
 import history from '../utils/history';
 
+
 //auth
 interface LoginProps {
     authService: AuthService,
@@ -65,9 +66,10 @@ export class Login extends React.Component <LoginProps, LoginState> {
             }
         }
 
-        return <div className="">
-           <h2>Login Page</h2> 
-            <form onSubmit={e => this.handleSubmit(e)}>
+        return <div id="logreg-forms">
+
+           <h1>LOGIN</h1> 
+            <form className="" onSubmit={e => this.handleSubmit(e)}>
                 <input value={this.state.userName} onChange = { e => this.setUsername(e)} /><br/>
                 <input value={this.state.password} onChange = { e => this.setPassword(e)} type='password'/><br/>
                 <input type='submit' value='Login'/>

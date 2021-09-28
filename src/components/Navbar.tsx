@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 
 
+
+
 export class Navbar extends React.Component<{
     user: User | undefined
 }> {
@@ -19,11 +21,29 @@ export class Navbar extends React.Component<{
 
         return(
             <div className='navbar'>
-                <Link to='/'> Home </Link>
-                <Link to='/profile'>Profile</Link>
-                <Link to='/hotels'>Hotels</Link>
-                {loginLogOut}
+                 <div className="rightside">
+                 {loginLogOut} ---
+                   <input type="text" placeholder="Search..." />
+                    <button>Search</button>
+               
+               </div>
+                    <div className="header"> 
+                     <h1>JUST BOOK IT </h1>
+                     
+                    </div>
+
+               <div className="leftside">
+                    <div className="links">
+                        <Link to='/'>| Home | </Link>
+                        <Link to='/profile'> | Profile |</Link>
+                        <Link to='/hotels'> | Hotels |</Link>
+                   
+                    </div>
+                    
             </div>
+</div> 
+
+            
         )
     }
 } 

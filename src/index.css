@@ -1,5 +1,47 @@
+.App {
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: Fira Sans;
+  font-size: 5.5em;
+  letter-spacing: 50px;
+  background-color: white;
+  color: #021E30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-variant-caps: titling-caps;
+}
+h2 {
+  font-family: Fira Sans;
+  font-size: 3.5em;
+  letter-spacing: 20px;
+  background-color: white;
+  color: #021E30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-variant-caps: titling-caps;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+}
+
+a:visited { 
+  color: white;
+}
+
+
 body {
-  margin: 0;
+  margin-top: 300px;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,36 +52,86 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
 
+body::-webkit-scrollbar-track {
+  background: #021E30;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #021E30;  /* creates padding around scroll thumb */
+}
 .wrapper {
   margin: auto;
-  width: 70%;
+  width: auto;
+
+
 }
 
 /* Add a black background color to the top navigation */
 .navbar {
-  background-color: rgb(138, 39, 39);
-  overflow: hidden;
+  background-color: #021E30;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-family: Noto Sans, sans-serif;
+  
 }
+
+.navbar .leftside {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+
+.navbar .leftside .links a {
+   text-decoration: none;
+   color:white ;
+   font-family: Fira Sans;
+   font-size: 1.5em;
+   letter-spacing: 10px;
+   padding-right: 40px;
+
+}
+
+
+.navbar .leftside .links a:hover {
+  background-color:whitesmoke ;
+}
+
+.navbar .rightside {
+  flex: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.rightside input {
+  width: 200px;
+  height: 30px; 
+  border: none;
+  border-radius: 4px;
+  padding-left: 15px;
+  color: goldenrod;
+}
+
+.rightside button {
+  height: 32px;
+  width: 70px;
+  font-size: 16px;
+
+
+}
+
 
 /* Style the links inside the navigation bar */
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
