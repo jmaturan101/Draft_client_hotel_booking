@@ -1,0 +1,22 @@
+#center {
+    
+    margin: auto;
+    width: 50%;
+    padding: 90px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    font-variant-caps: titling-caps;
+    
+} 
+
+#center #login {
+    font-family: Fira Sans;
+    letter-spacing: 10px;
+    background-color: white;
+    color: #021E30;
+    font-variant-caps: titling-caps;
+    
+}

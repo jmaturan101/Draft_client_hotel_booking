@@ -6,19 +6,20 @@
 
 h1 {
   font-family: Fira Sans;
-  font-size: 5.5em;
-  letter-spacing: 50px;
+  font-size: 8.7em;
+  letter-spacing: 23px;
   background-color: white;
   color: #021E30;
   display: flex;
   justify-content: center;
   align-items: center;
   font-variant-caps: titling-caps;
+  margin-left: 50px;
 }
 h2 {
   font-family: Fira Sans;
   font-size: 3.5em;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
   background-color: white;
   color: #021E30;
   display: flex;
@@ -78,6 +79,7 @@ body::-webkit-scrollbar-thumb {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   font-family: Noto Sans, sans-serif;
+  margin-bottom: 3px;
   
 }
 

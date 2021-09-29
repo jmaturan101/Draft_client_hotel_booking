@@ -14,10 +14,14 @@ const data =  [
     render() {
         return (
     <div>
+
+<h2> WHAT ARE YOU WAITING FOR? </ h2>      <hr />
         <SwiftSlider data={data}/> 
-    <br />
-            
-             <h2> LUXURY HOTEL BOOKINGS </ h2>
+   
+            <hr />
+             <h2> VOTED #1 </h2>
+                <h2> FOR LUXURY HOTEL BOOKINGS </ h2>
+             <h2>Your Dream Stay Awaits You</h2>
              
             
     </div>  

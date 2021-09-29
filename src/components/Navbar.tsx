@@ -25,8 +25,9 @@ export class Navbar extends React.Component<{
                  {loginLogOut} ---
                    <input type="text" placeholder="Search..." />
                     <button>Search</button>
-               
+               <br />
                </div>
+             
                     <div className="header"> 
                      <h1>JUST BOOK IT </h1>
                      
@@ -37,9 +38,10 @@ export class Navbar extends React.Component<{
                         <Link to='/'>| Home | </Link>
                         <Link to='/profile'> | Profile |</Link>
                         <Link to='/hotels'> | Hotels |</Link>
+                        <br />
                    
                     </div>
-                    
+                  
             </div>
 </div> 
 
